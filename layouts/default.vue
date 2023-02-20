@@ -6,12 +6,10 @@
         <main class="flex bg-purple-700 text-white flex-col justify-around grow">
             <slot />
         </main>
-        <footer class="flex bg-emerald-900 text-cyan-300  ">
-            <h2>footer</h2>
+        <footer class="flex justify-between bg-emerald-900 text-cyan-300 shadow">
             <NuxtLink to="/">Home</NuxtLink>
-            <p>--------------------------------</p>
-            <NuxtLink to="about">About</NuxtLink>
-            <p>----------------------------------</p>
+            <NuxtLink to="/about">About</NuxtLink>
+            <NuxtLink to="/xiaomi">Xiaomi</NuxtLink>
         </footer>
     </div>
 </template>

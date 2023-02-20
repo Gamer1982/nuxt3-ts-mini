@@ -8,7 +8,11 @@
 
 <script setup >
 const newModel = computed(() => {
-    return useRoute().params.model ** 2
+    return useRoute().params
+})
+
+useHead({
+    title: `nuxt3`
 })
 
 </script>
