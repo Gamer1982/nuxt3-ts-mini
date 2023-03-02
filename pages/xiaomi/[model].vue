@@ -1,9 +1,13 @@
 <template>
     <div>
-        <h2>This is xiaomi {{ $route.params.model }}</h2>
-        <p>new version - {{ newModel }}</p>
-        <p>{{ $options }}</p>
+        <p>new version - {{ newModel.model }}</p>
+
+        <nuxt-link to="/xiaomi/xiaomi-mi-11" class="shadow-lg text-center">
+            <h2>This is {{ $route.params.model }}</h2>
+            <img :src="`/img/${$route.params.model}` + '.png'" alt="">
+        </nuxt-link>
     </div>
+    <h2>{{ str }}</h2>
 </template>
 
 <script setup >
@@ -15,8 +19,11 @@ useHead({
     title: `nuxt3`
 })
 
+
+
+
+console.log(str);
+
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -1,6 +1,7 @@
 <template>
     <div>
         <h2>About</h2>
+
     </div>
 </template>
 
@@ -8,6 +9,5 @@
 
 </script>
 
-<style scoped>
 
-</style>
+<style scoped></style>

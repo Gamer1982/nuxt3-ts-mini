@@ -11,11 +11,19 @@
             <NuxtLink to="/about">About</NuxtLink>
             <NuxtLink to="/xiaomi">Xiaomi</NuxtLink>
         </footer>
+        <h2>{{ [...strComputed] }}</h2>
     </div>
 </template>
 
 <script setup lang="ts">
+const str = ref("For more information, see Chapter 3.4.5.1")
 
+const reg = /in/gi;
+
+const strComputed = computed(() => {
+    return str.value.matchAll(reg)
+})
+console.log(strComputed);
 
 </script>
 
